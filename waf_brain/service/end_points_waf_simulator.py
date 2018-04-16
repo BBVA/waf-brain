@@ -1,5 +1,6 @@
-import logging
 import aiofiles
+import logging
+import re
 
 from sanic import response, Blueprint
 
@@ -9,6 +10,8 @@ log = logging.getLogger("waf-brain")
 
 waf_blueprint_simulator = Blueprint("waf_brain_simulator")
 
+
+pattern = re.compile("^[A-Za-z0-9_-]*$")
 
 @waf_blueprint_simulator.route('/<path:[\w\W\/]*>',
                                methods=[
@@ -26,12 +29,21 @@ async def waf_simulator(request, path):
 
     total = []
     for arg, val in request.raw_args.items():
-        total.append(process_payload(
-            MODEL,
-            arg,
-            [val],
-            True
-        ))
+        if pattern.match(val):
+            total.append(
+                {"paramName": arg,
+                "score": 0,
+                "time": 0,
+                "weights": 0}
+            )
+        else:
+            print(process_payload)
+            total.append(process_payload(
+                MODEL,
+                arg,
+                [val],
+                True
+            ))
 
     async with aiofiles.open(DUMP_FILE, 'a+') as f:
 
