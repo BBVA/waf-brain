@@ -58,5 +58,5 @@ Research
 ========
 **Contribute to the project**, get our Notebooks and datasets for train new models.
 
-`For **more info** go to this link: <https://github.com/BBVA/waf-brain/blob/master/research/RESEARCH.md>`
+For **more info** `go to this link: <https://github.com/BBVA/waf-brain/blob/master/research/RESEARCH.md>`
 
