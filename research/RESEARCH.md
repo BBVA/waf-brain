@@ -3,9 +3,9 @@
 This project is composed for a Deep Learning Model with Recurrent Neural Networks, with the objective of make easy the development of this part,
 this directory contains this elements:
 
-- **NOTEBOOKS**: For reply and create the model.[Go to Notebooks](Link to Notebooks)
+- **NOTEBOOKS**: For reply and create the model.[Go to Notebooks](https://github.com/BBVA/waf-brain/blob/master/research/notebooks/NOTEBOOKS.md)
 
-- **GENERATED MODELS**: You can use differents models previosly generated.[Go to Models](Link to Generated Models)
+- **GENERATED MODELS**: You can use differents models previosly generated.[Go to Models](https://github.com/BBVA/waf-brain/blob/master/research/models/MODELS.md)
 
 ## You can contribute with this project
 You can create new models and upload to our models directory, also you can test with [waf-benchmark](http://).
