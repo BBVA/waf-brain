@@ -12,8 +12,8 @@ You can create new models and upload to our models directory, also you can test 
 
 ![alt](http://kirklandweblog.typepad.com/.a/6a00d83451975769e201b8d290befa970c-800wi)
 
-## Thanks to the rooted mail list, that helped us attacking our honeypots.
-[**Here**](https://github.com/BBVA/waf-brain/blob/master/research/rooted/wafbrain_output.txt) are the promised results:
+## Thanks to the rooted mail list.
+That helped us attacking our honeypots.[**Here**](https://github.com/BBVA/waf-brain/blob/master/research/rooted/wafbrain_output.txt) are the promised results:
 - The first parameter is the percentage of sql injection attack.
 - The second parameter is the time to process this payload.
 - The third parameter is the payload.
