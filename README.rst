@@ -56,6 +56,7 @@ python -m waf_brain -T --dump-file logs.txt -l 0.0.0.0 -M custom_model.h5
 
 Research
 ========
-Contribute to the project, get our Notebooks and datasets for train new models.
-`For more info go to this link: <https://github.com/BBVA/waf-brain/blob/master/research/RESEARCH.md>`
+**Contribute to the project**, get our Notebooks and datasets for train new models.
+
+`For **more info** go to this link: <https://github.com/BBVA/waf-brain/blob/master/research/RESEARCH.md>`
 
