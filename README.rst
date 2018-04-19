@@ -62,7 +62,7 @@ You have multiples kind of benchmarking
 .. highlight:: bash
 python -m waf_brain -T --dump-file logs.txt -l 0.0.0.0
 
-- Use custom model
+- Use **custom model**
 
 .. highlight:: bash
 python -m waf_brain -T --dump-file logs.txt -l 0.0.0.0 -M custom_model.h5
