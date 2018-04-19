@@ -12,9 +12,20 @@ You can create new models and upload to our models directory, also you can test 
 
 ![alt](http://kirklandweblog.typepad.com/.a/6a00d83451975769e201b8d290befa970c-800wi)
 
-These are our results with waf-benchmark and [this model](https://github.com/BBVA/waf-brain/blob/master/waf_brain/models/model_feat-5_botneck-101_v2.h5)
+## Thanks to the rooted mail list, that helped us attacking our honeypots.
+[**Here**](https://github.com/BBVA/waf-brain/blob/master/waf_brain/rooted/wafbrain_output.txt) are the promised results:
+- The first parameter is the percentage of sql injection attack.
+- The second parameter is the time to process this payload.
+- The third parameter is the payload.
+- The last parameter is the weight inside the network, the first element is the loss weight and the second is a binary element, if the network match this element.
+    This is important for explicability, because you can detect patterns of attacks.
+
+
+## FINAL RESULTS
 
 ### MODSECURITY
+
+These are our results with waf-benchmark and [this model](https://github.com/BBVA/waf-brain/blob/master/waf_brain/models/model_feat-5_botneck-101_v2.h5)
 
 Modsecurity is based on **regular expressions**.
 
@@ -33,6 +44,8 @@ Modsecurity is based on **regular expressions**.
 
 
 ### WAF BRAIN
+
+Waf-brain is based on **Deep Learning**.
 
 | Tool name                 | Attacks blocked | Success attacks |
 |---------------------------|-----------------|-----------------|
