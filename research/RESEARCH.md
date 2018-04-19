@@ -8,11 +8,11 @@ this directory contains this elements:
 - **GENERATED MODELS**: You can use differents models previosly generated.[Go to Models](https://github.com/BBVA/waf-brain/blob/master/research/models/MODELS.md)
 
 ## You can contribute with this project
-You can create new models and upload to our models directory, also you can test with [waf-benchmark](http://).
+You can create new models and upload to our models directory, also you can test with [waf-benchmark](https://github.com/BBVA/waf-benchmark).
 
 ![alt](http://kirklandweblog.typepad.com/.a/6a00d83451975769e201b8d290befa970c-800wi)
 
-These are our results with waf-benchmark and [this model]()
+These are our results with waf-benchmark and [this model](https://github.com/BBVA/waf-brain/blob/master/waf_brain/models/model_feat-5_botneck-101_v2.h5)
 
 ### MODSECURITY
 
