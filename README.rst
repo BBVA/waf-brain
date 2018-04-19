@@ -27,9 +27,49 @@ This library allow:
 
 - Launch a web-server with a Machine Learning model for stop SQL Injection Attacks
 
+How install
+-----------
+.. highlight:: bash
+pip install -e .
+
+How use
+-------
+
+1. Launch waf-benchmark over the waf server address
+---------------------------------------------------
+You have multiples kind of benchmarking
+
+- For demo you can limit the number of results and list payloads summary
+
+.. highlight:: bash
+How install
+-----------
+.. highlight:: bash
+pip install -e .
+
+How use
+-------
+1. Launch the waf server and the application server
+---------------------------------------------------
+`This is a example repo for launch modsecurity server with express server <https://github.com/theonemule/docker-waf>`
+
+2. Launch waf-benchmark over the waf server address
+---------------------------------------------------
+You have multiples kind of benchmarking
+
+- For launch a server in **test mode** with our model on **localhost**, and collect partial results, launch this command
+
+.. highlight:: bash
+python -m waf_brain -T --dump-file logs.txt -l 0.0.0.0
+
+- Use custom model
+
+.. highlight:: bash
+python -m waf_brain -T --dump-file logs.txt -l 0.0.0.0 -M custom_model.h5
+
 
 Research
 ========
 Notebooks and datasets for train new models.
-`For more info go to this link: <./NOTEBOOKS>`
+`For more info go to this link: <https://github.com/BBVA/waf-brain/blob/master/research/RESEARCH.md>`
 
