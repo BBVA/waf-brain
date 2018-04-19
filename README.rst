@@ -26,22 +26,8 @@ Link to the article
 This library allow:
 
 - Launch a web-server with a Machine Learning model for stop SQL Injection Attacks
+- Use your custom machine-learning model.
 
-How install
------------
-.. highlight:: bash
-pip install -e .
-
-How use
--------
-
-1. Launch waf-benchmark over the waf server address
----------------------------------------------------
-You have multiples kind of benchmarking
-
-- For demo you can limit the number of results and list payloads summary
-
-.. highlight:: bash
 How install
 -----------
 .. highlight:: bash
@@ -70,6 +56,6 @@ python -m waf_brain -T --dump-file logs.txt -l 0.0.0.0 -M custom_model.h5
 
 Research
 ========
-Notebooks and datasets for train new models.
+Contribute to the project, get our Notebooks and datasets for train new models.
 `For more info go to this link: <https://github.com/BBVA/waf-brain/blob/master/research/RESEARCH.md>`
 
