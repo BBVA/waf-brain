@@ -53,7 +53,7 @@ python -m waf_brain -T --dump-file logs.txt -l 0.0.0.0
 .. highlight:: bash
 python -m waf_brain -T --dump-file logs.txt -l 0.0.0.0 -M custom_model.h5
 
-**NOTE**: Default address 127.0.0.1 and port 8000
+**NOTE**: Default port 8000
 
 Research
 ========
