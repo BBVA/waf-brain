@@ -29,21 +29,28 @@ async def waf_simulator(request, path):
 
     total = []
     for arg, val in request.raw_args.items():
-        if pattern.match(val):
-            total.append(
-                {"paramName": arg,
-                "score": 0,
-                "time": 0,
-                "weights": 0}
-            )
-        else:
-            print(process_payload)
-            total.append(process_payload(
-                MODEL,
-                arg,
-                [val],
-                True
-            ))
+        print(process_payload)
+        total.append(process_payload(
+            MODEL,
+            arg,
+            [val],
+            True
+        ))
+        # if pattern.match(val):
+        #     total.append(
+        #         {"paramName": arg,
+        #         "score": 0,
+        #         "time": 0,
+        #         "weights": 0}
+        #     )
+        # else:
+        #     print(process_payload)
+        #     total.append(process_payload(
+        #         MODEL,
+        #         arg,
+        #         [val],
+        #         True
+        #     ))
 
     async with aiofiles.open(DUMP_FILE, 'a+') as f:
 

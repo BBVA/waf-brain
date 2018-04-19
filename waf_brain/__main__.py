@@ -65,7 +65,7 @@ def argument_parser():
     behavior.add_argument(
         '-M', '--model',
         help="model used for WAF",
-        default="model_feat-5_botneck-101"
+        default="model_feat-5_botneck-101_v2"
     )
 
     testing = parser.add_argument_group("Enable testing mode")

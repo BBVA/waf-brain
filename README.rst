@@ -19,4 +19,16 @@ WAF-Brain
 Overview
 ========
 
-TODO
+This project was born to try to create a WAF(Web Application Firewall) with Deep Learning way.
+
+Link to the article
+
+This library allow:
+
+- Launch a web-server with a Machine Learning model for stop SQL Injection Attacks
+
+
+Research
+========
+Notebooks and datasets for train new models.
+`For more info go to this link: <./NOTEBOOKS>`
