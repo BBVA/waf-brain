@@ -61,3 +61,43 @@ Research
 
 For **more info** `go to this link: <https://github.com/BBVA/waf-brain/blob/master/research/RESEARCH.md>`
 
+Other Options
+=============
+
+usage: __main__.py [-h] [-v] [--backend-timeout BACKEND_TIMEOUT]
+                   [-A PROTECTED_URL] [-l LISTEN] [-p PORT] [-b BACKLOG]
+                   [--blocking-mode] [--blocking-threshold BLOCKING_THRESHOLD]
+                   [-M MODEL] [-T] [--dump-file DUMP_FILE] [-a]
+
+WAF-brain: the clever and efficient Firewall for the Web
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v                    log level
+
+Server Options:
+  --backend-timeout BACKEND_TIMEOUT
+                        timeout to connect to the backend
+  -A PROTECTED_URL, --protected-url PROTECTED_URL
+                        address service to protect with the WAF
+  -l LISTEN, --listen LISTEN
+                        listen address. Default: 127.0.0.1
+  -p PORT, --port PORT  listen port for service. Default: 8000
+  -b BACKLOG, --backlog BACKLOG
+                        maximum concurrent connections
+
+WAF Behavior:
+  --blocking-mode       enables active blocking of dangerous request
+  --blocking-threshold BLOCKING_THRESHOLD
+                        if the dangerous levels is upper this number, and
+                        blocking mode is enabled, WAF will block a request
+  -M MODEL, --model MODEL
+                        model used for WAF
+
+Enable testing mode:
+  -T, --enable-testing  enable testing mode
+  --dump-file DUMP_FILE
+                        dump file to track each request
+  -a, --access-log      enable access log for each request
+
+
