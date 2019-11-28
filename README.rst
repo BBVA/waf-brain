@@ -29,6 +29,11 @@ WAF-Brain detect attacks by using Deep Learning Networks. It checks each paramet
 
     **Currently** the project only includes models for **SQL Injection Attacks**, but you can use your custom machine-learning model.
 
+About the the research
+======================
+
+You can find the complete document about the research process at `RESEARCH.md <https://github.com/BBVA/waf-brain/blob/master/research/RESEARCH.md>`_
+
 Install
 =======
 
@@ -39,40 +44,73 @@ Install
 Usage
 =====
 
-1. Launch the waf server and the application server
----------------------------------------------------
+Demo App
+--------
 
-`This is a example repo for launch modsecurity server with express server <https://github.com/theonemule/docker-waf>`
+We have developed a demo App, that you can find at `demo app <https://github.com/BBVA/waf-brain/tree/master/demo_app>`_.
 
-2. Launch waf-benchmark over the waf server address
----------------------------------------------------
+In summary, it exposes an **end-point** at **/{tail}** that accept a random parameter in **tail**.
 
-You have multiples kind of benchmarking
-
-- For launch a server in **test mode** with our model on **localhost**, and collect partial results, launch this command
+For launching the App.
 
 .. code-block:: console
 
-    $ waf_brain -T --dump-file logs.txt -l 0.0.0.0
+    $ pip install aiohttp
+    $ python app.py
+    ======== Running on http://127.0.0.1:5000 ========
+    (Press CTRL+C to quit)
 
-- Use **custom model**
+Consume the App with curl is so easy:
 
 .. code-block:: console
 
-    $ waf_brain -T --dump-file logs.txt -l 0.0.0.0 -M custom_model.h5
+    $ curl -v /my-tail
+    OK
 
+**We we'll use this app to check the WAF**
 
-    Default port of server is **8000**
+Launching WAF
+-------------
 
-About the the research
-======================
+The application that we want to protect listen at **127.0.0.1:5000**. Then:
 
-You can find the complete document about the research process at `RESEARCH.md <https://github.com/BBVA/waf-brain/blob/master/research/RESEARCH.md>`_
+**With the default model**
+
+.. code-block:: console
+
+    $ waf_brain -A 127.0.0.1:5000 -l 0.0.0.0
+    ======== Running on http://127.0.0.1:8000 ========
+    (Press CTRL+C to quit)
+
+**custom model**
+
+.. code-block:: console
+
+    $ waf_brain -l 0.0.0.0 -A 127.0.0.1:5000 -M custom_model.h5
+    ======== Running on http://127.0.0.1:8000 ========
+    (Press CTRL+C to quit)
+
+**Testing mode**
+
+For launch a server in **test mode** with our model on **localhost**, and collect partial results, launch this command
+
+.. code-block:: console
+
+    $ waf_brain -T --dump-file logs.txt -l 0.0.0.0 -A 127.0.0.1:5000
+    ======== Running on http://127.0.0.1:8000 ========
+    (Press CTRL+C to quit)
+
+Benchmarking
+------------
+
+You have multiples kind of benchmarking, by a hacking tool (like *sqlmap*) or using our `WAF-Benchmark <https://github.com/BBVA/waf-benchmark>`_.
+
+In summary, in our test, we found that with WAF-Brain you can detect more attacks, in long payloads, than ModSecurity.
 
 Other Options
 =============
 
-CLI is self-explained, you can use **-h** command to display all the options:
+CLI is self-explained you can use **-h** command to display all the options:
 
 .. code-block:: console
 
