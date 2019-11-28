@@ -1,7 +1,7 @@
 WAF-Brain
 =========
 
-.. image:: docs/waf-brain-logo-250px.png
+.. image:: https://raw.githubusercontent.com/BBVA/waf-brain/master/docs/waf-brain-logo-250px.png
 
 **WAF-Brain: the clever and efficient Firewall for the Web**
 
