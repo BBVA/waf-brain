@@ -1,23 +1,17 @@
-WAF-Brain
-=========
+WAF-Brain - the clever and efficient Firewall for the Web
+=========================================================
 
 .. image:: https://raw.githubusercontent.com/BBVA/waf-brain/master/docs/waf-brain-logo-250px.png
    :scale: 50%
    :align: center
 
-**WAF-Brain: the clever and efficient Firewall for the Web**
-
-+----------------+-------------------------------------------------------+
-|Project site    | https://github.com/bbva/waf-brain                     |
-+----------------+-------------------------------------------------------+
-|Issues          | https://github.com/bbva/waf-brain/issues/             |
-+----------------+-------------------------------------------------------+
-|Latest Version  | 1.0.0-alpha                                           |
-+----------------+-------------------------------------------------------+
-|Python versions | 3.6 or above                                          |
-+----------------+-------------------------------------------------------+
-|License         | Apache 2                                              |
-+----------------+-------------------------------------------------------+
+.. image:: https://img.shields.io/pypi/v/waf-brain
+   :target: https://pypi.org/project/waf-brain/
+.. image:: https://img.shields.io/github/issues/BBVA/waf-brain
+   :target: https://github.com/BBVA/waf-brain/issues
+.. image:: https://img.shields.io/pypi/pyversions/waf-brain
+.. image:: https://img.shields.io/pypi/l/waf-brain
+   :target: https://github.com/BBVA/waf-brain/blob/master/LICENSE
 
 
 What's WAF-Brain
@@ -66,16 +60,12 @@ You have multiples kind of benchmarking
 About the the research
 ======================
 
-**Contribute to the project**, get our Notebooks and datasets for train new models.
-
-
-
-For **more info** `go to this link: <https://github.com/BBVA/waf-brain/blob/master/research/RESEARCH.md>`_
+You can find the complete document about the research process at `RESEARCH.md <https://github.com/BBVA/waf-brain/blob/master/research/RESEARCH.md>`_
 
 Other Options
 =============
 
-CLI is self-explained, you can use :samp:`-h` command to display all the options:
+CLI is self-explained, you can use **-h** command to display all the options:
 
 .. code-block:: console
 
@@ -115,6 +105,23 @@ CLI is self-explained, you can use :samp:`-h` command to display all the options
       --dump-file DUMP_FILE
                             dump file to track each request
       -a, --access-log      enable access log for each request
+
+
+Authors
+=======
+
+*Waf-Brain* is being developed by `BBVA-Labs Security team members <https://bbvalabs.gitbook.io/oss/bbva_labs_security>`_
+
+*Waf-Brain* is Open Source Software and available under the `Apache 2
+license <https://raw.githubusercontent.com/BBVA/kapow/master/LICENSE>`_
+
+Contributions
+-------------
+
+Contributions are of course welcome.  See
+`CONTRIBUTING <https://raw.githubusercontent.com/BBVA/kapow/blob/master/CONTRIBUTING.rst>`_
+or skim existing tickets to see where you could help out.
+
 
 Acknowledgments
 ===============
