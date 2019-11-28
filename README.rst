@@ -11,6 +11,7 @@ WAF-Brain - the clever and efficient Firewall for the Web
    :target: https://github.com/BBVA/waf-brain/blob/master/LICENSE
 
 .. image:: https://img.shields.io/pypi/pyversions/waf-brain
+   :target: https://www.python.org/downloads/release/python-360/
 
 .. image:: https://raw.githubusercontent.com/BBVA/waf-brain/master/docs/waf-brain-logo-250px.png
    :scale: 50%
