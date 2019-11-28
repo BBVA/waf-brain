@@ -23,7 +23,11 @@ What's WAF-Brain
 
 This project was born to try to create a WAF (Web Application Firewall) with the **Machine-Learning-Deep Learning Way**.
 
-**Currently** the project only includes models for **SQL Injection Attacks**, but you can use your custom machine-learning model.
+WAF-Brain detect attacks by using Deep Learning Networks. It checks each parameter of each HTTP Request by the network. The Neural Network resolved if a specific parameter content is dangerous or not. If it consider that parameter is dangerous, then WAF-Brain will block the request.
+
+.. note::
+
+    **Currently** the project only includes models for **SQL Injection Attacks**, but you can use your custom machine-learning model.
 
 Install
 =======
@@ -57,7 +61,6 @@ You have multiples kind of benchmarking
 
     $ waf_brain -T --dump-file logs.txt -l 0.0.0.0 -M custom_model.h5
 
-.. note::
 
     Default port of server is **8000**
 
