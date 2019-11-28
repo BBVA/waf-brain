@@ -165,3 +165,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+.idea/$CACHE_FILE$
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/waf-brain.iml
