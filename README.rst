@@ -23,9 +23,9 @@ WAF-Brain
 What's WAF-Brain
 ================
 
-This project was born to try to create a WAF(Web Application Firewall) with Deep Learning way.
+This project was born to try to create a WAF (Web Application Firewall) with the **Machine-Learning-Deep Learning Way**.
 
-Currently the project only includes models for SQL Injection Attacks, but you can use your custom machine-learning model.
+**Currently** the project only includes models for **SQL Injection Attacks**, but you can use your custom machine-learning model.
 
 Install
 =======
@@ -36,7 +36,6 @@ Install
 
 Usage
 =====
-
 
 1. Launch the waf server and the application server
 ---------------------------------------------------
@@ -117,4 +116,7 @@ CLI is self-explained, you can use :samp:`-h` command to display all the options
                             dump file to track each request
       -a, --access-log      enable access log for each request
 
-At
+Acknowledgments
+===============
+
+Logo image was `Designed by Freepik <http://www.freepik.com>`_
