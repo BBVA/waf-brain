@@ -7,9 +7,12 @@ WAF-Brain - the clever and efficient Firewall for the Web
 
 .. image:: https://img.shields.io/pypi/v/waf-brain
    :target: https://pypi.org/project/waf-brain/
+
 .. image:: https://img.shields.io/github/issues/BBVA/waf-brain
    :target: https://github.com/BBVA/waf-brain/issues
+
 .. image:: https://img.shields.io/pypi/pyversions/waf-brain
+
 .. image:: https://img.shields.io/pypi/l/waf-brain
    :target: https://github.com/BBVA/waf-brain/blob/master/LICENSE
 
