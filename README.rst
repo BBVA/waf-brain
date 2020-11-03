@@ -78,7 +78,7 @@ The application that we want to protect listen at **127.0.0.1:5000**. Then:
 
 .. code-block:: console
 
-    $ waf_brain -A 127.0.0.1:5000 -l 0.0.0.0
+    $ waf-brain -A 127.0.0.1:5000 -l 0.0.0.0
     ======== Running on http://127.0.0.1:8000 ========
     (Press CTRL+C to quit)
 
@@ -86,7 +86,7 @@ The application that we want to protect listen at **127.0.0.1:5000**. Then:
 
 .. code-block:: console
 
-    $ waf_brain -l 0.0.0.0 -A 127.0.0.1:5000 -M custom_model.h5
+    $ waf-brain -l 0.0.0.0 -A 127.0.0.1:5000 -M custom_model.h5
     ======== Running on http://127.0.0.1:8000 ========
     (Press CTRL+C to quit)
 
@@ -96,7 +96,7 @@ For launch a server in **test mode** with our model on **localhost**, and collec
 
 .. code-block:: console
 
-    $ waf_brain -T --dump-file logs.txt -l 0.0.0.0 -A 127.0.0.1:5000
+    $ waf-brain -T --dump-file logs.txt -l 0.0.0.0 -A 127.0.0.1:5000
     ======== Running on http://127.0.0.1:8000 ========
     (Press CTRL+C to quit)
 
